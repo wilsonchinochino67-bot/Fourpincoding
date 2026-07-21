@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FourPin Coding - Web Developer App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>🔧 FourPin Coding</h1>
+                <p>Your Online Web Developer Tool</p>
+            </div>
+            <nav class="navbar">
+                <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
+                <button id="resetBtn" class="reset-btn">Reset</button>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Editor Section -->
+            <section class="editor-section">
+                <div class="editor-container">
+                    <!-- HTML Editor -->
+                    <div class="editor-box">
+                        <div class="editor-header">
+                            <h2>HTML</h2>
+                            <span class="lang-badge">HTML5</span>
+                        </div>
+                        <textarea id="htmlCode" class="editor" placeholder="Enter your HTML code here...">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to FourPin Coding!&lt;/h1&gt;
+    &lt;p&gt;Start coding here...&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+                    </div>
+
+                    <!-- CSS Editor -->
+                    <div class="editor-box">
+                        <div class="editor-header">
+                            <h2>CSS</h2>
+                            <span class="lang-badge">CSS3</span>
+                        </div>
+                        <textarea id="cssCode" class="editor" placeholder="Enter your CSS code here...">body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+p {
+    color: white;
+    font-size: 18px;
+}</textarea>
+                    </div>
+
+                    <!-- JavaScript Editor -->
+                    <div class="editor-box">
+                        <div class="editor-header">
+                            <h2>JavaScript</h2>
+                            <span class="lang-badge">ES6+</span>
+                        </div>
+                        <textarea id="jsCode" class="editor" placeholder="Enter your JavaScript code here...">console.log('Welcome to FourPin Coding!');
+
+// Example: Add interactivity
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Page loaded successfully!');
+});</textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Preview Section -->
+            <section class="preview-section">
+                <div class="preview-header">
+                    <h2>Live Preview</h2>
+                    <button id="autoRefresh" class="refresh-btn">🔄 Auto Refresh: ON</button>
+                </div>
+                <iframe id="preview" class="preview" title="Live Preview"></iframe>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 FourPin Coding | Your First Day on GitHub | Made with ❤️</p>
+            <div class="footer-links">
+                <a href="#">Documentation</a>
+                <a href="#">GitHub</a>
+                <a href="#">Contact</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
